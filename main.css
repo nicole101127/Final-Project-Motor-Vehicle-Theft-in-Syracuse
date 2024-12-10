@@ -1,0 +1,197 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* New gradient background for a fresh look */
+    color: #333333;
+    font-family: 'Arial', sans-serif; /* Using Arial for cleaner, modern text */
+    margin: 0;
+    padding: 0;
+}
+
+#assign_header {
+    background-color: #004d40; /* Deep teal background for a more professional yet fresh look */
+    color: white;
+    padding-top: 20px; /* Increased padding for a more spacious feel */
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px; /* Rounded corners for a softer, modern feel */
+    text-align: center; /* Centered header */
+}
+
+#assign_header h4 {
+    font-size: 36px; /* Larger header text to make it more prominent */
+    margin-bottom: 0px;
+}
+/* Caption for Images */
+.caption {
+    font-size: 16px; /* Slightly larger font size for readability */
+    color: #616161; /* Softer gray for caption text */
+    margin-top: 8px;
+    font-style: italic; /* Added italics for better emphasis */
+}
+
+.subheader {
+    font-size: 30px;  /* Smaller than the main header */
+    color: #4f9a77;   /* Lighter green for subheader */
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Image Styles */
+img {
+    border: 3px solid rgba(0, 0, 0, 0.1); /* Slightly darker border for contrast */
+    border-radius: 12px; /* Subtle rounded corners for images */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Larger, softer shadow for depth */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover for engagement */
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;  /* Centers the images horizontally */
+    gap: 20px;                /* Space between the images */
+    margin-top: 30px;
+}
+
+/* Individual image and caption block */
+.image-item {
+    display: inline-block;    /* Keeps image and caption together */
+    text-align: center;       /* Centers the captions under images */
+    width: 60%;               /* Adjusts the width of each image block */
+    vertical-align: top;      /* Ensures captions align correctly with images */
+}
+
+/* Image styling */
+.image {
+    width: 100%;              /* Ensures the image fills its container */
+    height: auto;             /* Maintains the aspect ratio of the images */
+    border: 2px solid #ccc;   /* Adds a clean border to the images */
+    border-radius: 5px;       /* Rounds the corners slightly */
+    display: block;           /* Ensures the image is treated as a block element */
+    margin: 0 auto;           /* Centers the image inside its container */
+}
+
+/* Caption styling */
+.caption {
+    font-size: 14px;          /* Small font for the captions */
+    color: #555;              /* Subtle gray for readability */
+    margin-top: 8px;          /* Adds spacing between the image and the caption */
+    line-height: 1.4;         /* Increases readability */
+    display: block;           /* Forces captions to appear as a block below the image */
+}
+
+
+.caption em {
+    font-style: italic;
+    color: #006400; /* Dark green */
+    font-size: 13px;
+}
+
+
+
+blockquote {
+    background-color: #d6e9f7; /* Softer light blue background */
+    color: #2e4a46; /* Dark green text */
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 5px solid #2e4a46; /* Dark green border */
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+blockquote p {
+    margin: 0; /* Ensuring no extra space around blockquote text */
+}
+
+
+/* Deck (Subheading) Styles */
+h5 {
+    font-size: 18px; /* Smaller size for the deck to make it less dominant */
+    color: #004d40; /* Matching the deck color to the header for consistency */
+    font-weight: 400; /* Lighter font weight for a more subtle look */
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Spacing between paragraphs for clarity */
+    color: #424242; /* Softer text color for the body text */
+}
+
+/* Footer Style (if applicable) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Adding Hover Effects to Links */
+a {
+    color: #004d40; /* New link color matching the header */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Simple underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #assign_header h4 {
+        font-size: 28px; /* Smaller header size on smaller screens */
+    }
+
+    .caption {
+        font-size: 14px; /* Smaller caption text on mobile */
+    }
+
+    p {
+        font-size: 14px; /* Slightly smaller body text on mobile */
+    }
+
+    img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+}
+
+
+.large-image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.large-image img.end-image {
+    width: 80%; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.large-image .caption {
+    font-size: 14px;
+    color: #555; /* Neutral gray for readability */
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.large-image .caption em {
+    font-style: italic;
+    color: #006400;; /* Slightly lighter gray for the source */
+}
